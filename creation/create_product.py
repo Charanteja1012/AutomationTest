@@ -9,7 +9,7 @@ division_res = create_division().json()
 
 
 def test_create_product():
-url = f"{main_url}/commerce-v2/products/{main_workspace}"
+    url = f"{main_url}/commerce-v2/products/{main_workspace}"
     payload = {
         "name": "EGG CURRY MASALA",
         "description": "EGG CURRY MASALA",
