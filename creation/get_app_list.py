@@ -6,4 +6,8 @@ from principal_login.request_apis import getApi
 def get_app_list():
     url = f"{main_url}/app/list/{main_workspace}"
     res = getApi(url)
-    return res
+    # return res\
+    print(res.json())
+
+
+get_app_list()

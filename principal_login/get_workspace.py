@@ -4,7 +4,7 @@ from user_login.single_login import send_otp,verify_otp,get_workspace
 from user_login.mfa_login import verify_mobile_otp,verify_email_otp,get_workspacess
 
 mobile_number = principal_mobile_num
-main_workspace = []
+main_workspace = ""
 main_token = ""
 code = ""
 send_otp_response = send_otp(main_url, mobile_number)

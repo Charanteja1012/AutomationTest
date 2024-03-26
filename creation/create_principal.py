@@ -5,24 +5,24 @@ import requests
 
 def test_create_principal():
     headers = {
-    "Content-Type": "application/json",
-    "Authorization": "Bearer "+f"{token}"
-    }
+      "Content-Type": "application/json",
+      "Authorization": "Bearer "+f"{token}"
+      }
 
     payload = {
-  "firstName": "Automation Digital",
-  "lastName": "",
-  "mobile": "0911012101210",
-  "email": "allpharma012@gmail.com",
-  "workspaceDetails": {
-    "companyName": "Automation Digital",
-    "spaceName": "Digital",
-    "companyEmail": "allpharma012@gmail",
-    "code": "Automation",
-    "isSeller": True,
-    "gstin": "27DFRTY39003E4CC"
-  }
-}
+      "firstName": "Automation Testing",
+      "lastName": "",
+      "mobile": "0919090909090",
+      "email": "allpharma900@gmail.com",
+      "workspaceDetails": {
+        "companyName": "Automation Testing",
+        "spaceName": "Testing",
+        "companyEmail": "allpharma900@gmail.com",
+        "code": "Testing",
+        "isSeller": True,
+        "gstin": "27AZXCH98765E4ZZ"
+      }
+    }
     url = f"{main_url}/admin/principal/workspace"
     res = requests.post(url,json=payload,headers = headers)
     print(res.json())
